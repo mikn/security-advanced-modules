@@ -35,7 +35,7 @@
 
   <properties>
     <security.version>0.7.0.0</security.version>
-    <elasticsearch.version>6.5.4</elasticsearch.version>
+    <elasticsearch.version>6.6.2</elasticsearch.version>
 
     <!-- deps -->
     <log4j.version>2.11.1</log4j.version>
@@ -343,6 +343,14 @@
 	<dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j.version}</version>
+      <type>test-jar</type>
       <scope>test</scope>
     </dependency>
 
